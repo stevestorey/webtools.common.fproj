@@ -34,6 +34,7 @@ public final class StandardJreRuntimeComponent
     public static final IRuntimeComponentVersion VERSION_1_5 = TYPE.getVersion( "1.5" ); //$NON-NLS-1$
     public static final IRuntimeComponentVersion VERSION_1_6 = TYPE.getVersion( "1.6" ); //$NON-NLS-1$
     public static final IRuntimeComponentVersion VERSION_1_7 = TYPE.getVersion( "1.7" ); //$NON-NLS-1$
+    public static final IRuntimeComponentVersion VERSION_1_8 = TYPE.getVersion( "1.8" ); //$NON-NLS-1$
 
     @Deprecated
     public static final IRuntimeComponentVersion VERSION_5_0 = VERSION_1_5;
@@ -79,6 +80,10 @@ public final class StandardJreRuntimeComponent
         else if( jvmver.startsWith( "1.7" ) ) //$NON-NLS-1$
         {
             rcv = StandardJreRuntimeComponent.VERSION_1_7;
+        }
+        else if( jvmver.startsWith( "1.8" ) ) //$NON-NLS-1$
+        {
+            rcv = StandardJreRuntimeComponent.VERSION_1_8;
         }
         else 
         {
